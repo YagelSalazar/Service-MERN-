@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class AddProvider extends Component {
 
@@ -102,53 +103,50 @@ class AddProvider extends Component {
         return (
             <div>
                 <div className="container">
-                    <div className="row">
-                        <div className="col s3">
-                            <div className="card">
-                                <div className="card-content">
-                                    <form onSubmit={this.addProvider}>
-                                        <div className="row">
-                                            <div className="input-field col s12">
-                                                <input type="text" placeholder="Provider name" onChange={this.handleChange} name="name" value={this.state.name} />
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="input-field col s12">
-                                                <input type="text" placeholder="Provider RFC" onChange={this.handleChange} name="rfc" value={this.state.rfc} />
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="input-field col s12">
-                                                <input type="text" placeholder="Provider address" onChange={this.handleChange} name="address" value={this.state.address} />
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="input-field col s12">
-                                                <input type="text" placeholder="Provider phone" onChange={this.handleChange} name="phone" value={this.state.phone} />
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="input-field col s12">
-                                                <input type="text" placeholder="Provider contact" onChange={this.handleChange} name="contact" value={this.state.contact} />
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="input-field col s12">
-                                                <input type="text" placeholder="Provider email" onChange={this.handleChange} name="email" value={this.state.email} />
-                                            </div>
-                                        </div>
-                                        <div className="row">
-                                            <div className="input-field col s12">
-                                                <input type="text" placeholder="classification" onChange={this.handleChange} name="classification" value={this.state.classification} />
-                                            </div>
-                                        </div>
-                                        <button className="btn light-blue darken-4" type="submit">Agregar</button>
-                                    </form>
+                    <div className="card">
+                        <div className="card-content">
+                            <form onSubmit={this.addProvider}>
+                                <div className="row">
+                                    <div className="input-field col s12">
+                                        <input type="text" placeholder="Provider name" onChange={this.handleChange} name="name" value={this.state.name} />
+                                    </div>
                                 </div>
-                            </div>
+                                <div className="row">
+                                    <div className="input-field col s12">
+                                        <input type="text" placeholder="Provider RFC" onChange={this.handleChange} name="rfc" value={this.state.rfc} />
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="input-field col s12">
+                                        <input type="text" placeholder="Provider address" onChange={this.handleChange} name="address" value={this.state.address} />
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="input-field col s12">
+                                        <input type="text" placeholder="Provider phone" onChange={this.handleChange} name="phone" value={this.state.phone} />
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="input-field col s12">
+                                        <input type="text" placeholder="Provider contact" onChange={this.handleChange} name="contact" value={this.state.contact} />
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="input-field col s12">
+                                        <input type="text" placeholder="Provider email" onChange={this.handleChange} name="email" value={this.state.email} />
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="input-field col s12">
+                                        <input type="text" placeholder="classification" onChange={this.handleChange} name="classification" value={this.state.classification} />
+                                    </div>
+                                </div>
+                                <button className="btn light-blue darken-4" type="submit">Agregar</button>
+                            </form>
                         </div>
                     </div>
                 </div>
+
             </div>
         )
     }

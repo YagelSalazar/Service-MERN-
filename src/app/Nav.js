@@ -1,32 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom'
 
-class Nav extends Component {
+function Nav() {
 
-    render() {
-        return (
-            <nav className="nav-extended">
-                <div className="nav-content">
-                    <ul className="tabs tabs-transparent">
-                        <Link to="/solicitudes">
-                            <li className="tab">Solicitudes</li>
-                        </Link>
-                        <Link to="/proveedores">
-                            <li className="tab">Proveedores</li>
-                        </Link>
-                        <Link to="/ordenes">
-                            <li className="tab"><a>Ordenes de compra</a></li>
-                        </Link>
-                    </ul>
-                </div>
-                <div className="nav-content">
-                    <Link className="btn-floating btn-large halfway-fab waves-effect waves-light teal" to="/addprovider">
-                        <i className="material-icons">add</i>
-                    </Link>
-                </div>
-            </nav>
-        )
-    }
+    return (
+        <nav>
+            <div className="nav-wrapper">
+                <a href="#" className="brand-logo right">ITSOEH</a>
+                <ul className="left hide-on-med-and-down">
+                    <li><Link to="/solicitudes">Solicitudes de compra</Link></li>
+                    <li><Link to="/catalogo">Catalogo de proveedores</Link></li>
+                    <li><Link to="/ordenes">Ordenes de compra</Link></li>
+                </ul>
+            </div>
+        </nav>
+    );
 }
 
-export default Nav
+export default Nav;
