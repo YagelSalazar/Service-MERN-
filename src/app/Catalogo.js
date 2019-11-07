@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
+
 class Catalogo extends Component {
 
     constructor() {
@@ -61,10 +62,12 @@ class Catalogo extends Component {
         e.preventDefault()
     }
 
+    /* IT ALREADY WORKS */
     componentDidMount() {
         this.fetchProviders()
     }
 
+    /* IT ALREADY WORKS */
     fetchProviders() {
         fetch('/api/providers')
             .then(res => res.json())
